@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/server.js",
-    "lint": "eslint ./src"
+  "start-prod": "cross-env NODE_ENV=production node ./src/server.js",
+  "start-dev": "nodemon ./src/server.js",
+  "lint": "eslint ./src"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.14.0",
+    "cross-env": "^7.0.3",
     "eslint": "^9.14.0",
     "eslint-config-dicodingacademy": "^0.9.4",
     "globals": "^15.12.0",
